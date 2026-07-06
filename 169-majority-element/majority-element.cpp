@@ -17,17 +17,6 @@ public:
                 count--;
             }
         }
-
-        // Verification 
-        count = 0;
-        for (int num : nums) {
-            if (num == candidate)
-                count++;
-        }
-
-        if (count > nums.size() / 2)
-            return candidate;
-
-        return -1;  // if none exists
+        return candidate;
     }
 };
